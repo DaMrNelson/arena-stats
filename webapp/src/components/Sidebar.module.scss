@@ -1,0 +1,41 @@
+.sidebar {
+  flex: 0 0 max(20ch, 15%);
+  max-width: max(20ch, 15%);
+  height: 100%;
+  overflow: auto;
+  padding: 1em 0;
+
+  background: var(--bs-secondary-bg);
+  //background: #bbbec0;
+  -moz-box-shadow:    -3px 0 5px 0 #000;
+  -webkit-box-shadow: -3px 0 5px 0 #000;
+  box-shadow:         -3px 0 5px 0 #000;
+}
+
+.sidebarPad {
+  padding: 0 1em;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  color: var(--bs-link-color);
+  margin-top: 0.25em;
+}
+
+.accordionItem.specific {
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-inner-border-radius: 0;
+}
+
+.filterLabelWithQ {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

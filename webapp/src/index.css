@@ -1,0 +1,10 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.widePopover {
+  /** I hate important, but this is the only rule for the class so I'll use it. */
+  --bs-popover-max-width: min(50vw, 80ch) !important;
+}

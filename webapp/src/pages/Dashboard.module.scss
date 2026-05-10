@@ -1,0 +1,20 @@
+.dashboard {
+  > :global(.row), > :global(.container) > :global(.row) {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+
+    padding-top: 1em;
+
+    &:last-child {
+      padding-bottom: 1em;
+    }
+
+    > :global(.col), :global([class*="col-"]) {
+      padding-left: 1em;
+
+      &:last-child {
+        padding-right: 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.body.specific {
+  //height: 440px;
+  height: 400px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.titleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex: 0 0 auto;
+
+  //margin-bottom: var(--bs-card-title-spacer-y);
+  margin-bottom: 1em;
+  color: var(--bs-card-title-color);
+
+  line-height: 1;
+}
+
+.title {
+  margin-top: 0;
+  //font-size: 1.25rem;
+  font-weight: 500;
+  font-weight: bold;
+  //line-height: 1.2;
+  line-height: 1;
+}
+
+.subtitles {
+  color: var(--bs-secondary-text-emphasis);
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+.content {
+  flex: 1 1 0;
+  overflow: auto;
+}

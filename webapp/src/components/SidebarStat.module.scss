@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.label {
+    flex: 1 1 100%;
+    font-weight: bold;
+}
+
+.current, .total {
+    flex: 0 0 auto;
+}
+
+.divider, .total, .percent {
+    color: var(--bs-secondary-color)
+}
+
+.percent {
+    margin-left: 4px;
+    font-style: italic;
+}

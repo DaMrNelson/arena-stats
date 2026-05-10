@@ -1,0 +1,32 @@
+.container {
+  flex-direction: row;
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  flex: 1 1 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.altRolesToggle.specific {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  min-height: unset;
+
+  > * {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1em;
+    height: 1em;
+  }
+
+  > label {
+    position: relative;
+    top: -2px;
+  }
+}

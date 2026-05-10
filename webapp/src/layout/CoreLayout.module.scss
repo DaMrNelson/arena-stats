@@ -1,0 +1,22 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.navbar.specific {
+  flex: 0 0 auto;
+  background: var(--bs-secondary-bg);
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.navPages {
+  flex: 1 0 auto;
+}
+
+.content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
