@@ -132,7 +132,7 @@ export const HandPickedDashboard = () => {
 
       <FilterResultsContext value={{ filterResults: filterResults_ExcludeAuthors, setFilterResults: () => {} }}>
         <Row>
-          <Col xs={6}>
+          <Col xs={12} lg={6}>
             <DashboardCard
               title="WR by Champion Role"
               titleExtra={createAltRolesToggle("alt-roles-1")}
@@ -140,7 +140,7 @@ export const HandPickedDashboard = () => {
               <RoleWRBar includeAltRoles={includeAltRoles} />
             </DashboardCard>
           </Col>
-          <Col xs={3}>
+          <Col xs={12} lg={3}>
             <DashboardCard
               title="Pick Rate by Role"
               titleExtra={createAltRolesToggle("alt-roles-2")}
@@ -148,7 +148,7 @@ export const HandPickedDashboard = () => {
               <RolePicksPie includeAltRoles={includeAltRoles} />
             </DashboardCard>
           </Col>
-          <Col xs={3}>
+          <Col xs={12} lg={3}>
             <DashboardCard title="Top Picks">
               <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly", height: "100%" }}>
                 <TopChampPicksFeaturedStat top={10} alwaysExcludeBravery />
@@ -166,17 +166,17 @@ export const HandPickedDashboard = () => {
       />
       <FilterResultsContext value={{ filterResults: filterResults_ExcludeAuthors, setFilterResults: () => {} }}>
         <Row>
-          <Col xs={6}>
+          <Col xs={12} lg={6}>
             <DashboardCard title="Placement by Pick Type">
               <PickModePlacementBar />
             </DashboardCard>
           </Col>
-          <Col xs={3}>
+          <Col xs={6} lg={3}>
             <DashboardCard title="WR by Pick Type">
               <PickModeWRBar fixedChartBounds />
             </DashboardCard>
           </Col>
-          <Col xs={3}>
+          <Col xs={6} lg={3}>
             <DashboardCard title="Pick Types">
               <PickModePie />
             </DashboardCard>
@@ -184,17 +184,17 @@ export const HandPickedDashboard = () => {
         </Row>
 
         <Row>
-          <Col xs={6}>
+          <Col xs={12} lg={6}>
             <DashboardCard title="Placement of Stat Anvil Runners">
               <StatAnvilPlacementBar />
             </DashboardCard>
           </Col>
-          <Col xs={3}>
+          <Col xs={6} lg={3}>
             <DashboardCard title="WR of Stat Anvil Runners">
               <StatAnvilWRBar fixedChartBounds />
             </DashboardCard>
           </Col>
-          <Col xs={3}>
+          <Col xs={6} lg={3}>
             <DashboardCard title="Frequency of Stat Anvil Runners">
               <StatAnvilPie />
             </DashboardCard>
@@ -209,7 +209,7 @@ export const HandPickedDashboard = () => {
       />
 
       <Row>
-        <Col xs={8}>
+        <Col xs={12} lg={8}>
           <DashboardCard
             title="Bravery Rolls for Author #1 (Owns All Champions)"
             titleExtra={createAltRolesToggle("alt-roles-3")}
@@ -217,7 +217,7 @@ export const HandPickedDashboard = () => {
             <BraveryRoleDistBar includeAltRoles={includeAltRoles} doBraverySimulation={false} />
           </DashboardCard>
         </Col>
-        <Col xs={4}>
+        <Col xs={12} lg={4}>
           <DashboardCard title="Bravery Rolls for Author #1 (Owns All Champions)">
             <BraveryChampionDistTable />
           </DashboardCard>
@@ -231,17 +231,17 @@ export const HandPickedDashboard = () => {
       />
 
       <Row>
-        <Col xs={6}>
+        <Col xs={12} lg={6}>
           <DashboardCard title="Enemy Rank Distribution (Author Duo is Gold)">
             <EnemyRankDistBar />
           </DashboardCard>
         </Col>
-        <Col xs={3}>
+        <Col xs={12} lg={3}>
           <DashboardCard title="WR of Masters+ Players in Gold Lobbies">
             <RankedWRPie tiers={["MASTER", "GRANDMASTER", "CHALLENGER"]} />
           </DashboardCard>
         </Col>
-        <Col xs={3}>
+        <Col xs={12} lg={3}>
           <DashboardCard title="Masters+ Frequency">
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-evenly", height: "100%" }}>
               <RankedPresenceFeaturedStat
