@@ -124,9 +124,10 @@ export const HandPickedDashboard = () => {
 
       <SectionHeader
         title="Meta Slavery"
-        //subtitle="Am I the only one tired of playing against the same dozen champions?"
+        subtitle="Am I the only one tired of playing against the same dozen champions?"
         //subtitle="It was fun for the first 6 months"
-        subtitle="Results that will surprise no one"
+        //subtitle="Results that will surprise no one"
+        //subtitle="Fighters Reign Supreme"
         style={{ marginTop: "4em" }}
       />
 
